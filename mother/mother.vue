@@ -1,6 +1,12 @@
 <script setup>
-import CountDown from 'vue-countdown'
-import Swiper from 'vue-awesome-swiper'
+import { ref } from 'vue'
+
+defineProps({
+  days: String,
+  hours:String,
+  minutes:String,
+  seconds:String,
+})
 const end = '2024-05-14 00:00:00'
 const images = ['../image/2.jpg', '../image/3.jpg', '../image/R.jpg']
 
