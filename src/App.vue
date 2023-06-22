@@ -11,7 +11,6 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <div>makabaka</div>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
