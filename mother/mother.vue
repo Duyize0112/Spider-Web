@@ -11,14 +11,14 @@ const swiperOptions = {
 }
 </script>
 
-
 <template>
   <div class="countdown">
+    <h>据母亲节还有：</h>
     <CountDown :date="end" v-if="remainingTime > 0">
-      <div class="countdown__item">{{ days }} Days</div>
-      <div class="countdown__item">{{ hours }} Hours</div>
-      <div class="countdown__item">{{ minutes }} Minutes</div>
-      <div class="countdown__item">{{ seconds }} Seconds</div>
+      <div class="countdown__item">{{ days }} 天</div>
+      <div class="countdown__item">{{ hours }} 小时</div>
+      <div class="countdown__item">{{ minutes }} 分钟</div>
+      <div class="countdown__item">{{ seconds }} 秒</div>
     </CountDown>
   </div>
 
