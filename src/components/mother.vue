@@ -8,7 +8,7 @@ defineProps({
   seconds:String,
 })
 const end = '2024-05-14 00:00:00'
-const images = ['../image/2.jpg', '../image/3.jpg', '../image/R.jpg']
+const images = [ '/image/2.jpg', '/image/3.jpg', '/image/R.jpg']
 
 const swiperOptions = {
   loop: true,
