@@ -1,5 +1,4 @@
 <template>
-  <div>Carousel</div>
   <a-carousel arrows>
     <template #prevArrow>
       <div class="custom-slick-arrow" style="left: 10px; z-index: 1">

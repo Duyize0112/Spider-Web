@@ -3,10 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
     <title>Vite + Vue</title>
+    <style>
+      html, body, #container {
+        width: 50%;
+        height: 50%;
+      }
+  </style>
   </head>
   <body>
+    <div id="container"></div>
+    <!-- canvas和video -->
+    <!-- <main>
+      <canvas id="canvas">
+      </canvas>
+      <video controls width="250">
+        <source src="/media/cc0-videos/flower.webm" type="video/webm">
+      
+        <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+      
+        Download the
+        <a href="/media/cc0-videos/flower.webm">WEBM</a>
+        or
+        <a href="/media/cc0-videos/flower.mp4">MP4</a>
+        video.
+      </video>
+    </main> -->
     <div id="app">
     </div>
     <script type="module" src="/src/main.js"></script>
@@ -15,5 +39,18 @@
 
 <script src="https://unpkg.com/vue@3"></script>
 <script src="https://unpkg.com/vue-router@4"></script>
+<script src="https://webapi.amap.com/maps?v=2.0&key=93de4fb51f31c32f4bc40db40b480178"></script>
+<script>
+  //canvas
+//   const canvas = document.getElementById('canvas');
+// const ctx = canvas.getContext('2d');
 
+// ctx.fillStyle = 'pink';
+// ctx.fillRect(10, 10, 150, 150);
 
+var map = new AMap.Map('container', {
+        viewMode: '2D', // 默认使用 2D 模式，如果希望使用带有俯仰角的 3D 模式，请设置 viewMode: '3D'
+        zoom:11, // 初始化地图层级
+        center: [116.397428, 39.90923] // 初始化地图中心点
+    });
+</script>

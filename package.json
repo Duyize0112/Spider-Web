@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chenfengyuan/vue-countdown": "^2.1.1",
     "ant-design-vue": "^3.2.20",
     "axios": "^1.4.0",
     "moment": "^2.29.4",

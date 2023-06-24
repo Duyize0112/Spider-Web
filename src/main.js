@@ -16,6 +16,4 @@ import router from './routers/index.js';
 //   worker.start({});
 const app = createApp(App);
 
-app.use(Antd),
-app.use(router),
-app.mount('#app')
+app.use(Antd).use(router).mount('#app')

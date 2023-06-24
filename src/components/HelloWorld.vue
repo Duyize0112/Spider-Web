@@ -9,7 +9,6 @@ const count = ref(0)
 </script>
 
 <template>
-  <a-button>这是按钮</a-button>
   <h1>{{ msg }}</h1>
 
   <div class="card">

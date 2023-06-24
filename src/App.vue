@@ -1,18 +1,17 @@
- <script setup>
+<script setup>
   import Carousel from './components/Carousel.vue'
   import list from './components/list.vue'
-  import menu from './components/menu.vue'
+  import countdown from './components/countdown.vue'
 </script>
-
 <template>
-    <main>
+<main>
     <Carousel/>
+    <countdown/>
     <list/>
-    <menu/>
 </main>
-    <router-view/>
 </template>
 
+<!-- //问题 menu不显示,page连接有问题 -->
 <style scoped>
 
 </style>
